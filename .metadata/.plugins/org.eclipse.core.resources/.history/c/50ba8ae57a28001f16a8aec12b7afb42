@@ -1,0 +1,5 @@
+package poly.edu.shop.config;
+
+public class AuthenticationIntercrptorConfig {
+
+}

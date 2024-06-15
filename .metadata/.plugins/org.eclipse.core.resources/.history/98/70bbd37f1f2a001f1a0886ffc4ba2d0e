@@ -1,0 +1,5 @@
+package poly.edu.shop.model;
+
+public class SiteLoginDto {
+
+}

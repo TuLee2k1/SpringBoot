@@ -1,0 +1,110 @@
+package poly.com.service.impl;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.data.domain.Example;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
+import org.springframework.stereotype.Service;
+
+import poly.com.domain.Category;
+import poly.com.repository.CategoryRespository;
+import poly.com.service.CategoryService;
+@Service
+public class CategoryServiceImpl implements CategoryService {
+	CategoryRespository categoryRespository;
+
+	public CategoryServiceImpl(CategoryRespository categoryRespository) {
+		this.categoryRespository = categoryRespository;
+	}
+
+	public <S extends Category> S save(S entity) {
+		
+		return categoryRespository.save(entity);
+	}
+
+
+	public List<Category> findAll(Sort sort) {
+		return categoryRespository.findAll(sort);
+	}
+
+	public void flush() {
+		categoryRespository.flush();
+	}
+
+	public Page<Category> findAll(Pageable pageable) {
+		return categoryRespository.findAll(pageable);
+	}
+
+	public <S extends Category> S saveAndFlush(S entity) {
+		return categoryRespository.saveAndFlush(entity);
+	}
+
+	public <S extends Category> List<S> saveAllAndFlush(Iterable<S> entities) {
+		return categoryRespository.saveAllAndFlush(entities);
+	}
+
+	public List<Category> findAll() {
+		return categoryRespository.findAll();
+	}
+
+	public List<Category> findAllById(Iterable<Long> ids) {
+		return categoryRespository.findAllById(ids);
+	}
+
+	public Optional<Category> findById(Long id) {
+		return categoryRespository.findById(id);
+	}
+
+	public void deleteAllInBatch(Iterable<Category> entities) {
+		categoryRespository.deleteAllInBatch(entities);
+	}
+
+	public boolean existsById(Long id) {
+		return categoryRespository.existsById(id);
+	}
+
+	public void deleteAllByIdInBatch(Iterable<Long> ids) {
+		categoryRespository.deleteAllByIdInBatch(ids);
+	}
+
+	public <S extends Category> boolean exists(Example<S> example) {
+		return categoryRespository.exists(example);
+	}
+
+	public void deleteAllInBatch() {
+		categoryRespository.deleteAllInBatch();
+	}
+
+	public long count() {
+		return categoryRespository.count();
+	}
+
+	public void deleteById(Long id) {
+		categoryRespository.deleteById(id);
+	}
+
+	public Category getById(Long id) {
+		return categoryRespository.getById(id);
+	}
+
+	public void delete(Category entity) {
+		categoryRespository.delete(entity);
+	}
+
+	public void deleteAllById(Iterable<? extends Long> ids) {
+		categoryRespository.deleteAllById(ids);
+	}
+
+	public void deleteAll(Iterable<? extends Category> entities) {
+		categoryRespository.deleteAll(entities);
+	}
+
+	public void deleteAll() {
+		categoryRespository.deleteAll();
+	}
+	
+	
+}

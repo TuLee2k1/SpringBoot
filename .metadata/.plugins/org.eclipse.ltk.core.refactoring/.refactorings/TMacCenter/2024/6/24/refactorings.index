@@ -1,0 +1,31 @@
+1718123402081	Copy compilation units
+1718123514587	Rename type 'Product'
+1718123847554	Delete element
+1718124132178	Pull up members to 'ProductService'
+1718124203957	Copy compilation unit
+1718125039866	Copy folder
+1718127340577	Delete element
+1718134303210	Delete element
+1718137023895	Pull up members to 'StorageService'
+1718143926546	Rename type 'Account'
+1718144304703	Pull up members to 'AccountService'
+1718144806926	Copy folder
+1718146825148	Delete element
+1718165051318	Copy compilation unit
+1718165116685	Copy file
+1718165851209	Pull up members to 'AccountService'
+1718168932001	Rename type 'AuthenticationInterceptor'
+1718178041225	Copy file
+1718179463916	Delete element
+1718179535692	Copy file
+1718179540527	Delete element
+1718179637160	Delete element
+1718348514432	Rename type 'Customer'
+1718348705922	Pull up members to 'CustomerService'
+1718349983653	Delete element
+1718353651581	Copy compilation unit
+1718353728403	Copy files
+1718353781732	Delete element
+1718354055725	Delete element
+1718354409425	Rename type 'ProductController'
+1718355752779	Delete element

@@ -1,0 +1,5 @@
+package poly.com.repository;
+
+public interface CategoryRespository {
+
+}

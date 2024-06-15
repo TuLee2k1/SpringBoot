@@ -1,0 +1,5 @@
+package poly.edu.shop.service;
+
+public interface ProductService {
+
+}

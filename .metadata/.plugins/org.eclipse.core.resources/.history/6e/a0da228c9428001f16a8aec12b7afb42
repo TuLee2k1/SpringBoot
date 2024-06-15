@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+    xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+  <head>
+  </head>
+
+  <body>
+    <div th:fragment="footer">
+    <section class="footer-main">
+                <div class="container">
+                    <div class="footer-top">
+                        <div class="footer-item">
+                            <h3 class="footer-title">Product</h3>
+                            <ul>
+                                <li class="footer-link">Listing</li>
+                                <li class="footer-link">Property</li>
+                                <li class="footer-link">Agents</li>
+                                <li class="footer-link">Blog</li>
+                            </ul>
+                        </div>
+                        <div class="footer-item">
+                            <h3 class="footer-title">Resources</h3>
+                            <ul>
+                                <li class="footer-link">Our Homes</li>
+                                <li class="footer-link">Member Stories</li>
+                                <li class="footer-link">Video</li>
+                                <li class="footer-link">Free trial</li>
+                            </ul>
+                        </div>
+                        <div class="footer-item">
+                            <h3 class="footer-title">Company</h3>
+                            <ul>
+                                <li class="footer-link">Patnerships</li>
+                                <li class="footer-link">Terms of use</li>
+                                <li class="footer-link">Privacy</li>
+                                <li class="footer-link">Sitemap</li>
+                            </ul>
+                        </div>
+                        <div class="footer-item">
+                            <h3 class="footer-title">Get in touch</h3>
+                            <p>You'll find your next home, in any style you prefer.</p>
+                            <div class="footer-social">
+                                <img src="assets/img/footer.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-end">
+                        <a href="#">
+                            <img src="assets/img/besnik.png" alt="">
+                        </a>
+                        <p>Copyright 2022.com, All rights reserved.</p>
+                    </div>
+                </div>
+            </section>
+    </div>
+  </body>
+
+</html>

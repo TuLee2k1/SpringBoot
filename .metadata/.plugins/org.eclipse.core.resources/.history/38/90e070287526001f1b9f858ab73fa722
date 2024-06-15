@@ -1,0 +1,5 @@
+package poly.com.domain;
+
+public class Account {
+
+}

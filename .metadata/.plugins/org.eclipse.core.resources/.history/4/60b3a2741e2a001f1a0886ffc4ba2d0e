@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{admin/categories/dashboardLayout.html}">
+
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+        integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+
+<body>
+
+    <section class="row" layout:fragment="content">
+        <div class="col-4 offset-4 mt-4">
+            <form th:action="@{/login}" method="post" th:object="${customer}">
+                <div class="card">
+                    <div class="card-header">
+                      <h2>Login</h2>
+                    </div>
+                    <div class="card-body">
+                     <div th:if="${message != null}" class="alert alert-primary" role="alert">
+                            <i>[[${message}]]</i>
+                        </div>
+                        
+                        <div class="form-group">
+                          <label for="password">Password</label>
+                          <input type="password" class="form-control" th:field="*{password}" name="password" id="password" aria-describedby="passwordHid" placeholder="">
+                          <small id="passwordHid" th:if="${#fields.hasErrors('password')}" class="form-text text-muted">Password is invalid</small>
+                        </div>
+                        
+                        <div class="form-group">
+                          <label for="email">Email</label>
+                          <input type="email" class="form-control" th:field="*{email}" name="email" id="email" aria-describedby="emailHid" placeholder="">
+                          <small id="emailHid" th:if="${#fields.hasErrors('email')}" class="form-text text-muted">Email is invalid</small>
+                        </div>
+                        
+                        <div class="form-group">
+                          <label for="phone">Phone</label>
+                          <input type="number" class="form-control" th:field="*{phone}" name="phone" id="phone" aria-describedby="phoneHid" placeholder="">
+                        </div>
+                        
+                                                               
+                    <div class="card-footer text-muted">
+
+                        <button type="reset" class="btn btn-secondary">Reset</button>
+                        <button class="btn btn-primary"> <i class="fas fa-sign-in-alt mr-1"></i> Registration</button>
+                        
+
+                    </div>
+                </div>
+                
+                </div>
+            </form>
+
+        </div>
+    </section>
+
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+package poly.edu.shop.service.impl;
+
+import org.springframework.stereotype.Service;
+
+import poly.edu.shop.service.AccountService;
+
+@Service
+public class AccountServiceImpl implements AccountService {
+
+}

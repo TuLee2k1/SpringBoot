@@ -1,0 +1,19 @@
+package poly.edu.shop.controller.admin;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+
+import poly.edu.shop.model.CategoryDto;
+import poly.edu.shop.service.CategoryService;
+
+public class AccountController {
+	@Autowired
+	CategoryService categoryService;
+	
+	@GetMapping("add")
+	public String add(Model model) {
+		model.addAttribute("category", new CategoryDto());
+		return "admin/categories/addOrEdit";
+	}
+}

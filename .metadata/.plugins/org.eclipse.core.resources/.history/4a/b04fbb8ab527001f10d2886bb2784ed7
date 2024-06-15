@@ -1,0 +1,21 @@
+spring.application.name=Assignment
+
+
+spring.mail.host=smtp.gmail.com
+spring.mail.port=587
+spring.mail.username=leetub4@gmail.com
+spring.mail.password=xecz whow pawg eshy
+spring.mail.properties.mail.smtp.auth=true
+spring.mail.properties.mail.smtp.starttls.enable=true
+
+
+spring.mvc.view.prefix=/WEB-INF/views/
+spring.mvc.view.suffix=.jsp
+
+spring.datasource.url=jdbc:sqlserver://localhost;databaseName=TmacCenter
+spring.datasource.username=sa
+spring.datasource.password=123
+spring.datasource.driver-class-name=com.microsoft.sqlserver.jdbc.SQLServerDriver
+
+spring.jpa.hibernate.ddl-auto=none
+spring.jpa.show-sql=true
